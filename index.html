@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <!-- <header class="page-header">
         <div class="container page-header__container ">
 
             <a href="./index.html" class="logo main-nav__logo">Web<span class="logo--black">Studio</span></a>
@@ -80,7 +80,7 @@
             </button>
 
         </div>
-    </header>
+    </header> -->
 
     <main>
         <section class="solutions-section">
@@ -145,7 +145,9 @@
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="work-list">
                     <li class="work-list__item">
-                        <img class="work-list__image" src="./images/img-1.jpg"
+                        <img class="work-list__image" srcset="
+                        ./images/work/work-1-370.jpg 1x, 
+                        ./images/work/work-1-540.jpg 2x" src="./images/work/work-1-370.jpg"
                             alt="Програміст крупним планом, що працює за своїм робочим столом" width="370" height="294">
                         <div class="work-list__overlay work-list__overlay--small-dark">
                             <p class="work-list__inscription">
@@ -155,7 +157,9 @@
                     </li>
 
                     <li class="work-list__item">
-                        <img class="work-list__image" src="./images/img-2.jpg"
+                        <img class="work-list__image" srcset="
+                        ./images/work/work-2-370.jpg 1x, 
+                        ./images/work/work-2-540.jpg 2x" src="./images/work/work-2-370.jpgg"
                             alt="Веб-дизайнери інтерфейсу користувача розробляють програми для смартфонів, команда працює над інтерфейсом мобільних телефонів"
                             width="370" height="294">
                         <div class="work-list__overlay work-list__overlay--small-dark">
@@ -166,7 +170,9 @@
                     </li>
 
                     <li class="work-list__item">
-                        <img class="work-list__image" src="./images/img-3.jpg"
+                        <img class="work-list__image" srcset="
+                        ./images/work/work-3-370.jpg 1x, 
+                        ./images/work/work-3-540.jpg 2x" src="./images/work/work-3-370.jpg"
                             alt="Креативний веб-дизайн художника з робочим графічним планшетом для вибору кольору"
                             width="370" height="294">
                         <div class="work-list__overlay work-list__overlay--small-dark">
@@ -179,15 +185,26 @@
             </div>
         </section>
 
+
+
         <section class="section  section--background">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
 
                 <ul class="team-list">
                     <li class="team-list__item team-card">
-                        <img class="team-card__image"
-                            srcset="./images/team/team-image-1.jpg 1x, ./images/team/team-image-1@2x.jpg 2x"
-                            src="./images/team/team-image-1-x1.jpg" alt="Ігор Дем'яненко, продакт-дизайнер" width="450">
+                        <div class="team-card__thumb">
+                            <img class="team-card__image" srcset="
+                            ./images/team/team-mobile-1-450.jpg 450w, 
+                            ./images/team/team-mobile-1-900.jpg 900w, 
+                            ./images/team/team-tablet-1-354.jpg 354w, 
+                            ./images/team/team-tablet-1-704.jpg 704w, 
+                            ./images/team/team-desktop-1-260.jpg 260w,  
+                            ./images/team/team-desktop-1-520.jpg 520w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/team/team-mobile-1-450.jpg" alt="Ігор Дем'яненко, продакт-дизайнер">
+                        </div>
+
                         <div class="team-card__meta">
                             <h3 class="team-card__name">Ігор Дем'яненко</h3>
                             <p class="team-card__position" lang="en">Product Designer</p>
@@ -223,10 +240,20 @@
                             </ul>
                         </div>
                     </li>
+
                     <li class="team-list__item team-card">
-                        <img class="team-card__image"
-                            srcset="./images/team/team-image-2.jpg 1x, ./images/team/team-image-2@2x.jpg 2x"
-                            src="./images/team/team-image-2-x1.jpg" alt="Ольга Рєпіна, розробник">
+                        <div class="team-card__thumb">
+                            <img class="team-card__image" srcset="
+                            ./images/team/team-mobile-2-450.jpg 450w, 
+                            ./images/team/team-mobile-2-900.jpg 900w, 
+                            ./images/team/team-tablet-2-354.jpg 354w, 
+                            ./images/team/team-tablet-2-704.jpg 704w, 
+                            ./images/team/team-desktop-2-260.jpg 260w,  
+                            ./images/team/team-desktop-2-520.jpg 520w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/team/team-mobile-2-450.jpg" alt="Ольга Рєпіна, розробник">
+                        </div>
+
                         <div class="team-card__meta">
                             <h3 class="team-card__name">Ольга Рєпіна</h3>
                             <p lang="en" class="team-card__position">Frontend Developer</p>
@@ -263,9 +290,18 @@
                         </div>
                     </li>
                     <li class="team-list__item team-card">
-                        <img class="team-card__image"
-                            srcset="./images/team/team-image-3.jpg 1x, ./images/team/team-image-3@2x.jpg 2x"
-                            src="./images/team/team-image-3-x1.jpg" alt="Микола Тарасов, маркетинг">
+                        <div class="team-card__thumb">
+
+                            <img class="team-card__image" srcset="
+                            ./images/team/team-mobile-3-450.jpg 450w, 
+                            ./images/team/team-mobile-3-900.jpg 900w, 
+                            ./images/team/team-tablet-3-354.jpg 354w, 
+                            ./images/team/team-tablet-3-704.jpg 704w, 
+                            ./images/team/team-desktop-3-260.jpg 260w,  
+                            ./images/team/team-desktop-3-520.jpg 520w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/team/team-mobile-3-450.jpg" alt="Микола Тарасов, маркетинг">
+                        </div>
                         <div class="team-card__meta">
                             <h3 class="team-card__name">Микола Тарасов</h3>
                             <p lang="en" class="team-card__position">Marketing</p>
@@ -302,10 +338,19 @@
                         </div>
                     </li>
                     <li class="team-list__item team-card">
-                        <img class="team-card__image"
-                            srcset="./images/team/team-image-4.jpg 1x, ./images/team/team-image-4@2x.jpg 2x"
-                            src="./images/team/team-image-4-x1.jpg"
-                            alt="Михайло Єрмаков, дизайнер інтерфейсу користувача">
+                        <div class="team-card__thumb">
+
+                            <img class="team-card__image" srcset="
+                            ./images/team/team-mobile-4-450.jpg 450w, 
+                            ./images/team/team-mobile-4-900.jpg 900w, 
+                            ./images/team/team-tablet-4-354.jpg 354w, 
+                            ./images/team/team-tablet-4-704.jpg 704w, 
+                            ./images/team/team-desktop-4-260.jpg 260w,  
+                            ./images/team/team-desktop-4-520.jpg 520w"
+                                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                                src="./images/team/team-mobile-4-450.jpg"
+                                alt="Михайло Єрмаков, дизайнер інтерфейсу користувача">
+                        </div>
                         <div class="team-card__meta">
                             <h3 class="team-card__name">Михайло Єрмаков</h3>
                             <p lang="en" class="team-card__position">UI Designer</p>
@@ -398,6 +443,9 @@
 
     <footer class="page-footer">
         <div class="container page-footer__container">
+
+            <!-- <div class="contact-wrapper"> -->
+
             <div class="contacts">
                 <a href="./index.html" class="logo page-footer__logo">Web<span class="logo--white">Studio</span></a>
 
@@ -456,6 +504,9 @@
                     </li>
                 </ul>
             </div>
+
+            <!-- </div> -->
+
 
             <div class="mailing">
                 <p class="mailing__text">
@@ -524,7 +575,8 @@
 
                         <input type="checkbox" name="policy" class="checkbox__input">
                         <span class="checkbox__icon"></span>
-                        <span class="checkbox__text">Погоджуюся з розсилкою та приймаю&nbsp;</span> <a href="" class="checkbox__link"> Умови договору</a>
+                        <span class="checkbox__text">Погоджуюся з розсилкою та приймаю&nbsp;</span> <a href=""
+                            class="checkbox__link"> Умови договору</a>
                     </label>
                 </div>
                 <button type="submit" class="button order-form__button">Відправити</button>

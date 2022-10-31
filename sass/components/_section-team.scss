@@ -1,6 +1,33 @@
 .team-list {
   @extend %list;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.team-card {
+  flex-basis: calc(100% - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .team-card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .team-card {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+
+.team-card__image {
+  width: 100%;
 }
 
 .team-card__meta {

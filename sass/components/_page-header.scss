@@ -9,6 +9,10 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+}
+
+
 .menu-button {
   display: inline-block;
   margin: 0;
@@ -19,12 +23,11 @@
 
   &__icon-cross {
     display: none;
-    &:hover{
+    &:hover {
       fill: $accent-color;
     }
   }
 
- 
   &.is-open &__icon-cross {
     display: block;
   }
@@ -35,20 +38,26 @@
 }
 
 .menu-container {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
 
-  position: absolute;
-  top: 0%;
-  left: 0;
-  width: 100%;
-  z-index: 1;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 
-  padding: 48px 40px;
-  background-color: $primary-white-color;
+    padding: 48px 40px;
+    background-color: $primary-white-color;
 
-  &.is-open {
-    display: block;
+    &.is-open {
+      display: block;
+    }
   }
+  @media screen and (mim-width: 768px){
+    display: flex;
+  }
+
 }
 
 .main-nav__logo {
