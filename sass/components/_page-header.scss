@@ -1,0 +1,147 @@
+.page-header {
+  position: relative;
+
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    @include flexCentered;
+    justify-content: space-between;
+  }
+}
+
+.menu-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  z-index: 2;
+
+  &__icon-cross {
+    display: none;
+    &:hover{
+      fill: $accent-color;
+    }
+  }
+
+ 
+  &.is-open &__icon-cross {
+    display: block;
+  }
+
+  &.is-open &__icon-burger {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  padding: 48px 40px;
+  background-color: $primary-white-color;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.main-nav__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  font-size: 24px;
+  line-height: 1.17;
+}
+
+.main-nav__list {
+  @extend %list;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 306px;
+}
+
+.main-nav__link {
+  @extend %link;
+
+  color: $secondary-text-color;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  &--current {
+    color: $accent-color;
+  }
+}
+
+.header-contacts {
+  @extend %list;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.header-contacts__link {
+  @extend %link;
+  color: $primary-text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  &--tel {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+
+  &--email {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header-contacts__icon {
+  display: none;
+}
+
+.header-social {
+  @extend %list;
+  gap: 0;
+}
+
+.header-social__item {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.header-social__link {
+  @extend %link;
+
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
