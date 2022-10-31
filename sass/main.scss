@@ -1,0 +1,29 @@
+@import 'base/normalize';
+
+@import 'utils/variables';
+
+@import 'base/base';
+
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+@import 'components/container';
+@import 'common/logo';
+@import 'common/button';
+
+@import 'components/page-header';
+
+@import 'components/section-common';
+@import 'components/section-solutions';
+@import 'components/section-features';
+@import 'components/_section-works';
+@import 'components/section-team'; 
+@import 'components/section-clients';
+
+@import 'components/page-footer';
+
+@import 'components/modal-window';
+
+@import 'components/portfolio';
+
+

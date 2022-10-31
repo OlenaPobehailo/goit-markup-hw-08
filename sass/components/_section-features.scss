@@ -1,0 +1,25 @@
+.feature-list {
+  @extend %list;
+}
+
+.feature-list__icon-wrapper {
+  @include flexCentered;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background: $secondary-bg-color;
+}
+
+.feature-list__subtitle {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  color: $secondary-text-color;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list__text {
+  line-height: 1.71;
+}
