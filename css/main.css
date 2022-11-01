@@ -271,6 +271,7 @@ ul {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .portfolio-list, .filter-list, .form-field, .address-list, .client-list, .team-list, .work-list, .feature-list, .header-social, .header-contacts, .main-nav__list, .social-list {
@@ -792,6 +793,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.social-network {
+  margin-top: 5px;
+}
 .social-network__text {
   margin-bottom: 20px;
   color: #ffffff;
@@ -856,6 +860,9 @@ img {
   .address {
     flex: 0 1 50%;
   }
+  .address-list {
+    margin-bottom: 0;
+  }
   .social-network {
     flex: 0 1 25%;
   }
@@ -876,6 +883,62 @@ img {
   }
   .mailing {
     flex: 0 1 11;
+  }
+  .page-footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  .address-list {
+    flex-direction: column;
+    gap: 9px;
+  }
+  .address-list__link {
+    line-height: 1.71;
+    font-style: normal;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .address-list__link--white {
+    color: #ffffff;
+  }
+  .address-list__link--color {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .address-list__link--color:hover {
+    color: #2196f3;
+  }
+  .social-network__text {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .mailing {
+    margin-top: 12px;
+    height: 86px;
+  }
+  .mailing__text {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  .mailing-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .mailing-form__input {
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 16px;
+  }
+  .mailing-form__input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 .backdrop {
@@ -1059,9 +1122,19 @@ img {
 .filter-list {
   flex-wrap: wrap;
   gap: 8px;
-  row-gap: 15px;
-  width: 336px;
-  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .filter-list {
+    row-gap: 15px;
+    width: 336px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .filter-list__button {
@@ -1082,8 +1155,15 @@ img {
   color: #ffffff;
 }
 
-.portfolio-list {
-  flex-direction: column;
+@media screen and (max-width: 767px) {
+  .portfolio-list {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-wrap: wrap;
+  }
 }
 
 .portfolio-card {
@@ -1092,6 +1172,16 @@ img {
 }
 .portfolio-card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-card {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1129,6 +1219,7 @@ img {
 }
 
 .portfolio-card__info {
+  height: auto;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
