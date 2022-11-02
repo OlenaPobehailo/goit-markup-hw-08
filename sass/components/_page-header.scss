@@ -95,12 +95,24 @@
   }
 }
 
-//   Mobile menu  - end
-
-.main-nav {
-  @media screen and (min-width: 1200px) {
+@media screen and (max-width: 479px){
+  .menu-container{
+    padding: 48px 20px;
   }
+
+  .header-contacts__link.header-contacts__link--tel,
+  .header-contacts__link.header-contacts__link--emeil{
+    font-size: 20px;
+  }
+
+  .header-social{
+    flex-wrap: wrap
+  }
+ 
 }
+
+
+//   Mobile menu  - end
 
 .main-nav__list {
   @extend %list;
@@ -246,6 +258,7 @@
     display: none;
   }
   margin-right: 10px;
+  fill: $primary-text-color;
 }
 
 .header-social {

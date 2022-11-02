@@ -39,6 +39,7 @@
   .client-list {
     flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   .client-list__item {
@@ -58,4 +59,16 @@
   .client-list__link {
     width: 170px;
   }
+}
+
+@media screen and (max-width: 479px) {
+  .client-list__link {
+    width: 100%;
+  }
+
+  .client-list__item{
+    
+      width: calc((100% - 30px) / 2);;
+  }
+  
 }
