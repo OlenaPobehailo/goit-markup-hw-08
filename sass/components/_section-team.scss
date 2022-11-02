@@ -12,22 +12,28 @@
   flex-basis: calc(100% - 30px);
 }
 
+.team-card__thumb {
+  width: 450px;
+}
+
 @media screen and (min-width: 768px) {
   .team-card {
     flex-basis: calc((100% - 30px) / 2);
   }
 
+  .team-card__thumb {
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .team-card {
     flex-basis: calc((100% - 90px) / 4);
   }
-}
 
-
-.team-card__image {
-  width: 100%;
+  .team-card__thumb {
+    width: 270px;
+  }
 }
 
 .team-card__meta {

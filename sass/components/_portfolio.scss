@@ -87,6 +87,15 @@
 .portfolio-card__wrapper {
   position: relative;
   overflow: hidden;
+  width: 450px;
+
+  @media screen and (min-width: 767px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .portfolio-card__overlay {

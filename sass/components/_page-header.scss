@@ -204,8 +204,6 @@
     color: $accent-color;
     fill: $accent-color;
   }
-
- 
 }
 
 .header-contacts__link--tel {
@@ -222,7 +220,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
   }
 }
 
@@ -239,7 +237,7 @@
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: calc(16/14);
+    line-height: calc(16 / 14);
   }
 }
 

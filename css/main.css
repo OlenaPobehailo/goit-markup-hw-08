@@ -271,7 +271,8 @@ ul {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio-list, .filter-list, .form-field, .address-list, .client-list, .team-list, .work-list, .feature-list, .header-social, .header-contacts, .main-nav__list, .social-list {
@@ -844,20 +845,26 @@ img {
   flex-basis: calc(100% - 30px);
 }
 
+.team-card__thumb {
+  width: 450px;
+}
+
 @media screen and (min-width: 768px) {
   .team-card {
     flex-basis: calc((100% - 30px) / 2);
+  }
+  .team-card__thumb {
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team-card {
     flex-basis: calc((100% - 90px) / 4);
   }
+  .team-card__thumb {
+    width: 270px;
+  }
 }
-.team-card__image {
-  width: 100%;
-}
-
 .team-card__meta {
   background-color: #ffffff;
   padding-top: 30px;
@@ -1410,6 +1417,17 @@ img {
 .portfolio-card__wrapper {
   position: relative;
   overflow: hidden;
+  width: 450px;
+}
+@media screen and (min-width: 767px) {
+  .portfolio-card__wrapper {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-card__wrapper {
+    width: 370px;
+  }
 }
 
 .portfolio-card__overlay {
