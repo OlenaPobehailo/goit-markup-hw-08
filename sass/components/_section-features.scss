@@ -1,7 +1,6 @@
 .feature-list {
   @extend %list;
   flex-direction: column;
-  //min-width: 100%;
 }
 
 .feature-list__icon-wrapper {
@@ -46,4 +45,10 @@
   .feature-list__item {
     flex-basis: calc((100% - 90px) / 4);
   }
+
+  
+    .section--short {
+      padding-bottom: 0;
+    }
+  
 }

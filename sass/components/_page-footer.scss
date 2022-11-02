@@ -10,7 +10,7 @@
   margin-bottom: 20px;
 
   font-size: 24px;
-  line-height: 1.17;
+  line-height: calc(28 / 24);
 }
 
 .address-list {
@@ -22,7 +22,7 @@
 
 .address-list__link {
   @extend %link;
-  line-height: 1.71;
+  line-height: calc(24 / 14);
   font-style: normal;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -36,11 +36,10 @@
   color: $transparent-white-color;
 }
 
-.social-network{
-  @media screen and (min-width: 768px){
-    
+.social-network {
+  @media screen and (min-width: 768px) {
+    margin-top: 5px;
   }
-  margin-top: 5px;
 }
 
 .social-network__text {
@@ -49,7 +48,7 @@
   color: $primary-white-color;
 
   font-weight: 700;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
 }
 
@@ -106,133 +105,131 @@
 }
 
 @media screen and (min-width: 768px) {
-  .page-footer__container{
+  .page-footer__container {
+    padding: 60px 89px 60px 86px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
   }
 
-  .address{
+  .address {
     flex: 0 1 50%;
   }
 
-  .address-list{
+  .address-list {
     margin-bottom: 0;
   }
 
-  .social-network{
+  .social-network {
     flex: 0 1 25%;
   }
 
-  .mailing{
+  .mailing {
     flex: 0 1 100%;
   }
-
-  
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
+  .contacts {
+    text-align: left;
+  }
+  .page-footer__logo {
+    font-size: 26px;
+    line-height: calc(31/26);
+  }
+
   .page-footer__container {
-    
+    padding: 0 15px;
     flex-wrap: nowrap;
-    gap: 93px;
+    gap: 70px;
   }
 
-  .address{
-    flex: 0 1 1;
+  .address {
+    flex: 0 1 auto;
   }
 
-  .social-network{
-    flex: 0 1 1;
+  .social-network {
+    flex: 0 1 auto;
   }
 
-  .mailing{
-    flex: 0 1 11;
+  .mailing {
+    flex: 0 1 auto;
   }
-
-
-
-
-
-
-
 
   .page-footer__logo {
     display: inline-block;
     margin-bottom: 20px;
   }
-  
+
   .address-list {
     @extend %list;
     flex-direction: column;
     gap: 9px;
   }
-  
+
   .address-list__link {
     @extend %link;
     line-height: 1.71;
     font-style: normal;
-  
+
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+
   .address-list__link--white {
     color: $primary-white-color;
   }
-  
+
   .address-list__link--color {
     color: $transparent-white-color;
-  
-    &:hover {
+
+    &:hover, &:focus {
       color: $accent-color;
     }
   }
-  
+
   .social-network__text {
     margin-top: 12px;
     margin-bottom: 20px;
-  
+
     color: $primary-white-color;
-  
+
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: left;
   }
-  
+
   .mailing {
     margin-top: 12px;
     height: 86px;
   }
-  
+
   .mailing__text {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: left;
+
   }
-  
+
   .mailing-form {
     margin-top: 20px;
-  
+
     display: flex;
     align-items: flex-start;
     gap: 12px;
   }
-  
+
   .mailing-form__input {
     width: 358px;
     height: 50px;
     border-radius: 4px;
     padding-left: 16px;
-  
-  
+
     &::placeholder {
       font-size: 16px;
       line-height: 1.25;
       color: rgba(255, 255, 255, 0.6);
     }
   }
-  
-  
-
 }
