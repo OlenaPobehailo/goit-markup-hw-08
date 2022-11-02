@@ -95,22 +95,20 @@
   }
 }
 
-@media screen and (max-width: 479px){
-  .menu-container{
+@media screen and (max-width: 479px) {
+  .menu-container {
     padding: 48px 20px;
   }
 
   .header-contacts__link.header-contacts__link--tel,
-  .header-contacts__link.header-contacts__link--emeil{
+  .header-contacts__link.header-contacts__link--emeil {
     font-size: 20px;
   }
 
-  .header-social{
-    flex-wrap: wrap
+  .header-social {
+    flex-wrap: wrap;
   }
- 
 }
-
 
 //   Mobile menu  - end
 
@@ -205,6 +203,14 @@
   }
 }
 
+.header-contacts__icon {
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+  margin-right: 10px;
+  fill: $primary-text-color;
+}
+
 .header-contacts__link {
   @extend %link;
   color: $primary-text-color;
@@ -212,9 +218,11 @@
   letter-spacing: 0.02em;
 
   &:hover,
-  &:focus {
-    color: $accent-color;
+  &:focus,
+  &:hover .header-contacts__icon,
+  &:focus .header-contacts__icon {
     fill: $accent-color;
+    color: $accent-color;
   }
 }
 
@@ -251,14 +259,6 @@
     font-size: 14px;
     line-height: calc(16 / 14);
   }
-}
-
-.header-contacts__icon {
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-  margin-right: 10px;
-  fill: $primary-text-color;
 }
 
 .header-social {
