@@ -100,13 +100,20 @@
     padding: 48px 20px;
   }
 
-  .header-contacts__link.header-contacts__link--tel,
-  .header-contacts__link.header-contacts__link--emeil {
+  .header-contacts__link.header-contacts__link--tel {
+    font-size: 25px;
+  }
+
+  
+  .header-contacts__link.header-contacts__link--email {
     font-size: 20px;
   }
 
   .header-social {
     flex-wrap: wrap;
+    & .header-social__link{
+      font-size: 12px;
+    }
   }
 }
 

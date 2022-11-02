@@ -9,6 +9,11 @@
   opacity: 1;
 
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 479px){
+    z-index: 10;
+  }
+
 }
 
 .backdrop.is-hidden {
@@ -32,12 +37,16 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-@media screen and (min-width: 1200px) {
-  .modal {
-    width: 528px;
-    padding: 40px;
+  @media screen and (max-width: 479px){
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    .modal {
+      width: 528px;
+      padding: 40px;
+    }
   }
 }
 
@@ -184,6 +193,11 @@
     height: 15px;
     margin-right: 8px;
     background-image: url('../images/icons/check.svg');
+
+    @media screen and (max-width: 479px){
+      background-size: cover;
+    }
+  
   }
 
   &__input:checked + &__icon {
@@ -200,6 +214,11 @@
 .checkbox__label {
   @include flexCentered;
   justify-content: start;
+
+  @media screen and (max-width: 479px){
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
   @media screen and (min-width: 1200px) {
     justify-content: center;
