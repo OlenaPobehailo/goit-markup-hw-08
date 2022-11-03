@@ -1204,13 +1204,13 @@ img {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .modal .modal {
+  .modal {
     width: 528px;
     padding: 40px;
   }
 }
-
 .modal__title {
   margin-bottom: 12px;
   color: #212121;
